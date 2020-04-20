@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background: url(../bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.f_p {
+  font-family: "Poppins", sans-serif;
+}
+
+.f_300 {
+  font-weight: 300;
+}
+
+.f_400 {
+  font-weight: 400;
+}
+
+.f_500 {
+  font-weight: 500;
+}
+
+.f_600 {
+  font-weight: 600;
+}
+
+.f_700 {
+  font-weight: 700;
+}
+
+.f_900 {
+  font-weight: 900;
+}
+
+.f_size_50 {
+  font-size: 50px;
+}
+
+.f_size_40 {
+  font-size: 40px;
+}
+
+.f_size_30 {
+  font-size: 30px;
+}
+
+.f_size_28 {
+  font-size: 28px;
+}
+
+.f_size_22 {
+  font-size: 22px;
+}
+
+.f_size_24 {
+  font-size: 24px;
+}
+
+.f_size_20 {
+  font-size: 20px;
+}
+
+.f_size_18 {
+  font-size: 18px;
+}
+
+.f_size_16 {
+  font-size: 16px;
+}
+
+.f_size_15 {
+  font-size: 15px;
+}
+
+.f_size_14 {
+  font-size: 14px;
+}
+
+.f_size_12{
+  font-size: 12px;
+}
+
+.mt_60 {
+  margin-top: 60px;
+}
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+.mt_40 {
+  margin-top: 40px;
+}
+
+.mt_70 {
+  margin-top: 70px;
+}
+
+.mt_75 {
+  margin-top: 75px;
+}
+
+.mt_100 {
+  margin-top: 100px;
+}
+
+.mt_130 {
+  margin-top: 130px;
+}
+
+.mb_70 {
+  margin-bottom: 70px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.mb_15 {
+  margin-bottom: 15px;
+}
+
+.mb_30 {
+  margin-bottom: -30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.mb-50 {
+  margin-bottom: -50px;
+}
+
+.mb_60 {
+  margin-bottom: 60px;
+}
+
+.mb_90 {
+  margin-bottom: 90px;
+}
+
+.dk_bg_one {
+  background: #090a21;
+}
+
+.dk_bg_two {
+  background: #0f1029;
+}
+
+.start_invest_body{
+	background: #ededed;
+}
+
+.sec_pad{
+	padding: 120px 0;
+}
+
+.sec_pad20{
+	padding: 20px 0;
+}
+
+.mt_120{
+	margin-top: 120px;
+}
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container .custom_container {
+  max-width: 1520px;
+}
+/* Header*/
+.finance_header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:0 70px;
+	background: #262626;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 1px 5px #ababab;
+	z-index: 100;
+}
+
+.finance_header .logo
+{
+	color: #fff;
+	height: 70px;
+	line-height: 70px;
+	font-size: 24px;
+	float: left;
+	font-weight:bold;
+}
+
+.finance_header .finance_navbar
+{
+	float: right;
+}
+.finance_header .finance_navbar ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.finance_header .finance_navbar ul li
+{
+	list-style: none;
+	position: relative;
+}
+
+.finance_header .finance_navbar ul li.sub-menu:before
+{
+	content: '\f0d7';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 70px;
+	color: #fff;
+	right: 5px;
+}
+
+.finance_header .finance_navbar ul li.hover.sub-menu:before
+{
+	content: '\f0d8';
+}
+
+.finance_header .finance_navbar ul li ul
+{
+	position: absolute;
+	left:0;
+	background: #333;
+	display: none;
+}
+
+.finance_header .finance_navbar ul li:hover ul
+{
+	display: block;
+}
+
+.finance_header .finance_navbar ul li ul li
+{
+	display: block;
+	width: 200px;
+}
+
+.finance_header .finance_navbar ul li a
+{
+	height: 70px;
+	line-height: 70px;
+	padding: 0px 25px;
+	color: #fff;
+	text-decoration: none;
+	display:block;
+}
+.finance_header .finance_navbar ul li a:hover,
+.finance_header .finance_navbar ul li a.active
+{
+	color: #fff;
+	background :inherit;
+}
+
+.sub-menu ul li:hover{
+	background: #2196f3;
+}
+
+.menu-toggle
+{
+	color: #fff;
+	float :right;
+	line-height: 70px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px )
+{
+	.finance_header
+	{
+		padding:0px 20px;
+	}
+	.menu-toggle
+	{
+		display: block;
+	}
+	.finance_header .finance_navbar
+	{
+		/*display: none;*/
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #333;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	.finance_header .finance_navbar.active
+	{
+		left:0px;
+	}
+	.finance_header .finance_navbar ul
+	{
+		display: block;
+		text-align: center;
+	}
+
+	.finance_header .finance_navbar ul li a
+	{
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	.finance_header .finance_navbar ul li:hover ul
+	{
+		display: none;
+	}
+	.finance_header .finance_navbar ul li.hover.sub-menu:before
+	{
+		content: '\f0d7';
+	}
+	.finance_header .finance_navbar ul li.active.sub-menu:before
+	{
+		content: '\f0d8';
+	}
+	.finance_header .finance_navbar ul li.active ul
+	{
+		display: block;
+		position: relative;
+		background : #003e6f;
+		transition-delay: 0.5s;
+	}
+	.finance_header .finance_navbar ul li ul li
+	{
+		width: 100%;
+	}
+}
+
+.breadcrumb_area {
+  background-image: -moz-linear-gradient(180deg, #0b4f92 0%, #a485fd 100%);
+  background-image: -webkit-linear-gradient(180deg, #ededed 0%, #ededed 100%);
+  background-image: -ms-linear-gradient(180deg, #0b4f92 0%, #a485fd 100%);
+  position: relative;
+  z-index: 1;
+  padding: 120px 0px 25px;
+  overflow: hidden;
+}
+/*============= seo_service_area css =============*/
+.seo_service_item {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  padding: 1px 40px 20px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.seo_service_item h4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #051441 ;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 16px;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.seo_service_item h4:hover {
+  color: #0b4f92;
+}
+
+.seo_service_item p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6a7695;
+  margin-bottom: 20px;
+}
+
+.seo_service_item:hover {
+  -webkit-box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+  box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+}
+
+.quiz_link a{
+  font-size: 20px;
+  line-height: 28px;
+  color: #051441 ;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 16px;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+	border-bottom: 1px solid #051441;
+}
+
+.quiz_link a:hover {
+  color: #0b4f92;
+	border-bottom: 1px solid #0b4f92;
+}
