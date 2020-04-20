@@ -1,71 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Optimize Invest</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header class="finance_header">
-        <div class="logo">LOGO</div>
-        <nav class="finance_navbar">
-            <ul>
-                <li class="sub-menu"><a href="#">Investment Forum</a>
-                    <ul>
-                        <li><a href="#">How to Invest</a></li>
-                        <li><a href="#">Where to Invest</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu"><a href="#">TAX Cornor</a>
-                     <ul>
-                        <li><a href="#">Other options</a></li>
-                        <li><a href="#">HRA's</a></li>
-                        <li><a href="#">How to save taxes</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu"><a href="#">Tools</a>
-                     <ul>
-                        <li><a href="#">MF Screening</a></li>
-                        <li><a href="#">MF Comparison</a></li>
-                        <li><a href="#">Return Calculator</a></li>
-                        <li><a href="#">Risk Pro</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu"><a href="#">Info</a>
-                     <ul>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Posts</a></li>
-                        <li><a href="#">New Info</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Q&A</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-      $(document).ready(function(){
-        $('.menu-toggle').click(function(){
-            $('.finance_navbar').toggleClass('active')
-        })
-        $('ul li').hover(function(){
-            $(this).siblings().removeClass('hover');
-            $(this).toggleClass('hover');
-        })
-        $('ul li').click(function(){
-            $(this).siblings().removeClass('active');
-            $(this).toggleClass('active');
-        })
-      })
-  </script>
-  </body>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>Optimize Invest</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header class="finance_header">
+			<div class="logo">LOGO</div>
+				<nav class="finance_navbar">
+					<ul>
+						<li class="sub-menu"><a href="#">Investment Forum</a>
+							<ul>
+								<li><a href="#">How to Invest</a></li>
+								<li><a href="#">Where to Invest</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu"><a href="#">TAX Cornor</a>
+							 <ul>
+								<li><a href="#">Other options</a></li>
+								<li><a href="#">HRA's</a></li>
+								<li><a href="#">How to save taxes</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu"><a href="#">Tools</a>
+							 <ul>
+								<li><a href="#">MF Screening</a></li>
+								<li><a href="#">MF Comparison</a></li>
+								<li><a href="#">Return Calculator</a></li>
+								<li><a href="#">Risk Pro</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu"><a href="#">Info</a>
+							 <ul>
+								<li><a href="#">Blogs</a></li>
+								<li><a href="#">Posts</a></li>
+								<li><a href="#">New Info</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Q&A</a></li>
+					</ul>
+				</nav>
+				<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</header>
+
+		<section class="optimize_investment_area">
+			<div class="banner_top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="f_p f_size_40" style="margin-top: -20px; margin-bottom: 70px !important;"><span class="f_700">Want to Optimize your Investments?</span></h2>
+						</div>
+						<div class="space">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="media tracking_item">
+											<img src="img/equity.jpg" style="border-radius:10px;" alt="">
+											<div class="media-body">
+												<a href="#"><h3 class="h_head">Equity</h3></a>
+												<p class="mt_35">Twit cras excuse my French</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="media tracking_item">
+											<img src="img/mf.jpg" style="border-radius:10px;" alt="">
+											<div class="media-body">
+												<a href="#"><h3 class="h_head">Mutual Funds</h3></a>
+												<p class="mt_35">Twit cras excuse my French</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="media tracking_item">
+											<img src="img/etf.png" style="border-radius:10px;" alt="">
+											<div class="media-body">
+												<a href="#"><h3 class="h_head">Exchange Traded Funds</h3></a>
+												<p>Twit cras excuse my French</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="media tracking_item">
+											<img src="img/stocks.png" style="border-radius:10px;" alt="">
+											<div class="media-body">
+												<a href="#"><h3 class="h_head">Stocks</h3></a>
+												<p class="mt_35">Twit cras excuse my French</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="blog_area action_area_three sec_pad40">
+			<div class="curved-mirror"></div>
+			<div class="curved"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h5 class="f_p f_size_40 f_500 mb-30 mt_30">Equity</h5>
+					</div>
+					<div class="blog_content" style="display:flex;">
+						<img src="img/b100.png" alt="" style="border-radius:50px;">
+						<p class="f_400 mb-30" style="margin:20px;">Equity investment refers to investment made by purchasing shares of a company in the stock market. The investor buys shares of the company and her investment value is linked to the company’s performance. Returns on equity investment are not guaranteed and is considered riskier than fixed income instruments.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="blog_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h5 class="f_p f_size_40 f_500 mb-30 mt_30">Mutual Funds</h5>
+						<div class="post_tag mb_40">                                   
+							<a target="_blank" href="#">How to Invest?</a>
+							<a target="_blank" href="#">MF Screener</a>
+							<a target="_blank" href="#">MF Categories</a>
+							<a target="_blank" href="#">MF Portfolios</a>
+							<a target="_blank" href="#">Top MFs</a>
+							<a target="_blank" href="#">MF Return Calculator</a>
+						</div>
+					</div>
+					<div class="blog_content" style="display:flex;">
+						<img src="img/b100.png" alt="" style="border-radius:50px;">
+						<p class="f_400 mb-30" style="margin:20px;">Mutual Funds are professionally managed funds which invests money on your behalf. Think of it as a portfolio constructed by a professional and you can invest in that portfolio with an initial amount of as low as Rs. 100.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="blog_area action_area_three sec_pad40">
+			<div class="curved-mirror"></div>
+			<div class="curved"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h5 class="f_p f_size_40 f_500 mb-30 mt_30">Exchange Traded Funds</h5>
+					</div>
+					<div class="blog_content" style="display:flex;">
+						<img src="img/b100.png" alt="" style="border-radius:50px;">
+						<p class="f_400 mb-30" style="margin:20px;">Equity investment refers to investment made by purchasing shares of a company in the stock market. The investor buys shares of the company and her investment value is linked to the company’s performance. Returns on equity investment are not guaranteed and is considered riskier than fixed income instruments.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script
+	src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu-toggle').click(function(){
+						$('.finance_navbar').toggleClass('active')
+				})
+				$('ul li').hover(function(){
+						$(this).siblings().removeClass('hover');
+						$(this).toggleClass('hover');
+				})
+				$('ul li').click(function(){
+						$(this).siblings().removeClass('active');
+						$(this).toggleClass('active');
+				})
+			})
+	</script>
+	</body>
 </html>
